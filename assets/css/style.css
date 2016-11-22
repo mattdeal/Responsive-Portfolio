@@ -209,6 +209,12 @@ button {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
 /*Start media queries here
  *Do padding/margins need to go here?
  */
@@ -218,6 +224,7 @@ button {
 		display: inline-block;
 		float: right;
 		padding: 30px 0px;
+		padding-right: 20px;
 	}
 
 	h1 {
@@ -225,6 +232,78 @@ button {
 		padding: 20px;
 		margin: 0px;
 	}
+
+	section {
+		overflow: auto;
+		float: left;
+		width: 45%;
+		margin-bottom: 70px;
+	}
+
+	aside {
+		float: right;
+		width: 45%;
+		margin-bottom: 30px;
+	}
+
+	.header-container {
+		width: 100%;
+		margin: 0 auto;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.content-container {
+		padding-left: 40px;
+		padding-right: 40px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.wrapper {
+		display: inline-block;	
+		width: 100%;
+	}
+
+	/*.img-left, .img-right {
+		float: none;
+		display: block;
+		text-align: center;
+	    width: 280px;
+    	margin: auto;
+	}*/
+
+	.img-left {
+		float: left;
+		/*margin-bottom: 30px;*/
+	}
+
+	.img-right {
+		float: right;
+		/*margin-bottom: 30px;*/
+	}
+ }
+
+ @media only screen and (max-width: 768px) {
+ 	/*header {overflow: auto;}
+
+ 	nav {
+		display: block;
+		float: none;
+		padding: 30px 0px;
+		text-align: center;
+	}
+
+	nav > a {
+		width: 30%;
+		display: inline-block;
+	}
+
+	h1 {
+		display: block;
+		padding: 20px;
+		margin: 0px;
+	}*/
 
 	section {
 		overflow: auto;
@@ -239,11 +318,14 @@ button {
 		display: block;
 		width: 100%;
 		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 
 	.header-container {
 		width: 100%;
 		margin: 0 auto;
+		padding-left: 0px;
+    	padding-right: 0px;
 	}
 
 	.content-container {
@@ -257,15 +339,39 @@ button {
 		display: inline-block;	
 		width: 100%;
 	}
+
+	/*.img-left, .img-right {
+		float: none;
+		display: block;
+		text-align: center;
+	    width: 280px;
+    	margin: auto;
+	}*/
  }
 
- @media only screen and (max-width: 768px) {
- 	header {overflow: auto;}
+ @media only screen and (max-width: 640px) {
+ 	/*.img-left, .img-right {
+		float: none;
+		display: block;
+		text-align: center;
+	    width: 280px;
+    	margin: auto;
+	}*/
+
+	.img-left, .img-right {
+		float: none;
+		display: block;
+		text-align: center;
+	    width: 280px;
+    	margin: auto;
+	}
+
+	header {overflow: auto;}
 
  	nav {
 		display: block;
 		float: none;
-		/*padding: 30px 0px;*/
+		padding: 30px 0px;
 		text-align: center;
 	}
 
@@ -279,43 +385,5 @@ button {
 		padding: 20px;
 		margin: 0px;
 	}
-
-	section {
-		overflow: auto;
-		display: block;
-		float: none;
-		width: 100%;
-		margin-bottom: 70px;
-	}
-
-	aside {
-		float: none;
-		display: block;
-		width: 100%;
-		margin-top: 30px;
-	}
-
-	.header-container {
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.content-container {
-		padding-left: 20px;
-		padding-right: 20px;
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.wrapper {
-		display: inline-block;	
-		width: 100%;
-	}
- }
-
- @media only screen and (max-width: 640px) {
- 	p {
- 		background-color: orange;
- 	}
  	
  }
